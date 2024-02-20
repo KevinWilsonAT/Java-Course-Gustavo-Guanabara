@@ -11,3 +11,7 @@
 </h2>
 
 ![NetBeans](https://img.shields.io/badge/NetBeans-1B6AC6?logo=apachenetbeanside&logoColor=fff&style=for-the-badge)
+
+### Linguagens do repositório:
+
+<img alt="Static Badge" src="https://img.shields.io/badge/--_?style=for-the-badge&label=Java&labelColor=%23b07219&color=%2300000000">
