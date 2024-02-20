@@ -2,20 +2,21 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package cursoemvideo;
+package com.cursoemvideo.displayresolutionswing;
 
-import java.util.Date;
+import java.awt.Dimension;
+import java.awt.Toolkit;
 
 /**
  *
  * @author kevin
  */
-public class ClockScreen extends javax.swing.JFrame {
+public class DisplayResolutionScreen extends javax.swing.JFrame {
 
     /**
-     * Creates new form ClockScreen
+     * Creates new form DisplayResolutionScreen
      */
-    public ClockScreen() {
+    public DisplayResolutionScreen() {
         initComponents();
     }
 
@@ -31,22 +32,22 @@ public class ClockScreen extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        lblHour = new javax.swing.JLabel();
-        btnHour = new javax.swing.JButton();
+        lblResolution = new javax.swing.JLabel();
+        btnResolution = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/calendar-icon-png-4104.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icon.png"))); // NOI18N
 
-        jLabel2.setText("Current Date and Time:");
+        jLabel2.setText("System Display Resolution:");
 
-        lblHour.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        lblHour.setText("Click on the Button");
+        lblResolution.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        lblResolution.setText("Click on the Button");
 
-        btnHour.setText("Cick Here");
-        btnHour.addActionListener(new java.awt.event.ActionListener() {
+        btnResolution.setText("Click Here");
+        btnResolution.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnHourActionPerformed(evt);
+                btnResolutionActionPerformed(evt);
             }
         });
 
@@ -55,26 +56,28 @@ public class ClockScreen extends javax.swing.JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
                 .addComponent(jLabel1)
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel2)
-                    .addComponent(lblHour)
-                    .addComponent(btnHour))
-                .addGap(0, 152, Short.MAX_VALUE))
+                    .addComponent(lblResolution)
+                    .addComponent(btnResolution))
+                .addContainerGap(128, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addContainerGap()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel2)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(lblHour)
                         .addGap(18, 18, 18)
-                        .addComponent(btnHour))
+                        .addComponent(lblResolution)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnResolution))
                     .addComponent(jLabel1))
-                .addGap(0, 37, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -97,11 +100,13 @@ public class ClockScreen extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnHourActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHourActionPerformed
+    private void btnResolutionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnResolutionActionPerformed
         // TODO add your handling code here:
-        Date clock = new Date();
-        lblHour.setText(clock.toString());
-    }//GEN-LAST:event_btnHourActionPerformed
+        Dimension resolution = Toolkit.getDefaultToolkit().getScreenSize();
+        int w = (int) resolution.getWidth();
+        int h = (int) resolution.getHeight();
+        lblResolution.setText("Screen size: "+ w +"px x " + h + "px");
+    }//GEN-LAST:event_btnResolutionActionPerformed
 
     /**
      * @param args the command line arguments
@@ -120,29 +125,29 @@ public class ClockScreen extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(ClockScreen.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(DisplayResolutionScreen.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(ClockScreen.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(DisplayResolutionScreen.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(ClockScreen.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(DisplayResolutionScreen.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(ClockScreen.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(DisplayResolutionScreen.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new ClockScreen().setVisible(true);
+                new DisplayResolutionScreen().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnHour;
+    private javax.swing.JButton btnResolution;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JLabel lblHour;
+    private javax.swing.JLabel lblResolution;
     // End of variables declaration//GEN-END:variables
 }

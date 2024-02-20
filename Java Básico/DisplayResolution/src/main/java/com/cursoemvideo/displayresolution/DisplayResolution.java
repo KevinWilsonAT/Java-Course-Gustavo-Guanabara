@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Project/Maven2/JavaApp/src/main/java/${packagePath}/${mainClassName}.java to edit this template
  */
 
-package com.mycompany.displayresolution;
+package com.cursoemvideo.displayresolution;
 
 import java.awt.Dimension;
 import java.awt.Toolkit;

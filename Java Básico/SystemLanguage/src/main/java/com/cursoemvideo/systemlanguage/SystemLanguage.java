@@ -3,19 +3,21 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Project/Maven2/JavaApp/src/main/java/${packagePath}/${mainClassName}.java to edit this template
  */
 
-package com.mycompany.systemhour;
+package com.cursoemvideo.systemlanguage;
 
-import java.util.Date;
+import java.util.Locale;
 
 /**
  *
  * @author kevin
  */
-public class SystemHour {
+
+public class SystemLanguage {
 
     public static void main(String[] args) {
-        Date date = new Date();
-        System.out.println("The system hour is:");
-        System.out.println(date.toString());
+        Locale lang = Locale.getDefault();
+        
+        System.out.println("The system language is:");
+        System.out.println(lang);
     }
 }
