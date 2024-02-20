@@ -105,7 +105,7 @@ public class DisplayResolutionScreen extends javax.swing.JFrame {
         Dimension resolution = Toolkit.getDefaultToolkit().getScreenSize();
         double w = resolution.getWidth();
         double h = resolution.getHeight();
-        lblResolution.setText("Screen size: "+ w +"px x " + h + "px");
+        lblResolution.setText("Screen size: "+ (int)w +"px x " + (int)h + "px");
     }//GEN-LAST:event_btnResolutionActionPerformed
 
     /**
