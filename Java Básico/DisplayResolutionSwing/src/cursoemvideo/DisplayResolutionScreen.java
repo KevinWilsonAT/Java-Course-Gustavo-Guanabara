@@ -103,9 +103,9 @@ public class DisplayResolutionScreen extends javax.swing.JFrame {
     private void btnResolutionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnResolutionActionPerformed
         // TODO add your handling code here:
         Dimension resolution = Toolkit.getDefaultToolkit().getScreenSize();
-        double w = resolution.getWidth();
-        double h = resolution.getHeight();
-        lblResolution.setText("Screen size: "+ (int)w +"px x " + (int)h + "px");
+        int w = (int) resolution.getWidth();
+        int h = (int) resolution.getHeight();
+        lblResolution.setText("Screen size: "+ w +"px x " + h + "px");
     }//GEN-LAST:event_btnResolutionActionPerformed
 
     /**

@@ -16,8 +16,8 @@ public class DisplayResolution {
 
     public static void main(String[] args) {
         Dimension resolution = Toolkit.getDefaultToolkit().getScreenSize();
-        double w = resolution.getWidth();
-        double h = resolution.getHeight();
-        System.out.println("Screen size: "+ (int)w +"px x " + (int)h + "px");
+        int w = (int) resolution.getWidth();
+        int h = (int) resolution.getHeight();
+        System.out.println("Screen size: "+ w +"px x " + h + "px");
     }
 }
