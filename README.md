@@ -14,4 +14,4 @@
 
 ### Linguagens do repositório:
 
-<img alt="Static Badge" src="https://img.shields.io/badge/--_?style=for-the-badge&label=Java&labelColor=%23b07219&color=%2300000000">
+<img src="https://img.shields.io/badge/Java-B07219?style=for-the-badge"><!-- -->
